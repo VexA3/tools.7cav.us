@@ -1,0 +1,75 @@
+.games-list {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
+    grid-gap: 50px;
+    grid-auto-rows: 1;
+    margin-top: 2%;
+    align-items: center;
+}
+
+.games-list > div {
+    width: 400px;
+    height: 400px;
+    border: 2px solid#EBC729;  
+    border-radius: 10px;
+}
+
+.Arma > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.Squad > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.HLL > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.image {
+    opacity: .5 ease;
+    width: 100%;
+    height: auto;
+    transition: 1s ease;
+    backface-visibility: hidden;
+}
+  
+.middle {
+  transition: 1s ease;
+  opacity: 0;
+  text-align: center;
+  margin-right: 30%;
+  margin-left: 30%;
+  margin-top: -60%;
+}
+
+.cuntainer:hover > .image {
+  opacity: 0.3;
+}
+
+.cuntainer:hover > .middle {
+  opacity: 1;
+}
+
+.text {
+  padding: 16px 32px;
+}
+
+.imageLogo {
+    height: 100%;
+    width: 100%;
+    transform: scale(250%)
+}
+
+.imageLogoHLL {
+    height: 100%;
+    width: 100%;
+    transform: scale(325%)
+}

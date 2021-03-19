@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Page author: Vex -->
+
+<head>
+    <title>Arma Attendance Tracker</title>
+    <meta charset="UTF-8">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/nav.css" rel="stylesheet" type="text/css">
+    <link href="../css/form.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav>
+        <div class="topnav">
+            <a href="../index.html" class="dropbtn">Home</a>
+            |
+            <a href="https://7cav.us/" class="dropbtn">7Cav</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="info">
+            <form id="frm1" name="TrackerForm" onsubmit="return validate()">
+                <fieldset>
+                    <legend>Server</legend>
+                    <div class="formdata">
+                        <label>Server</label>
+                        <select id="server" name="server">\
+                            <option value="none">Select a Server</option>
+                            <option value="3213929">Tactical Realism 2</option>
+                            <option value="1611557">Training Server 1</option>
+                            <option value="1611621">Training Server 2</option>
+                            <option value="1611620">Training Server 3</option>
+                        </select>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Time</legend>
+                    <div class="formdata">
+                        <label>Enter start time in Zulu (hh:mm)</label>
+                        <input type="text" name="sTime" />
+                    </div>
+                    <div class="formdata">
+                        <label>Enter end time in Zulu (hh:mm)</label>
+                        <input type="text" name="eTime" />
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Date</legend>
+                    <div class="formdata">
+                        <label>Enter Date (YYYY-MM-DD)</label>
+                        <input type="text" name="sDate" />
+                    </div>
+                    
+                    <div class="formdata">
+                        <label>Multiple Days?</label>
+                        <input type="checkbox" name="chk" id="check" />
+                    </div>
+                    
+                    <div class="formdata">
+                        <div id="multiple">
+                            <label>Enter End Date (YYYY-MM-DD)</label>
+                            <input type="text" name="eDate" />
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <fieldset id="subBut">
+                    <legend>Submit</legend>
+                    <div class="form-data" id="submitButton">
+                        <a href="#" class="dropbtn">Submit</a>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        
+        <div id="data-adjust">
+            <p>Retrieved Cav members will show here</p>
+        </div>
+    </main>
+    
+    <footer>
+        <div id="foot">
+            <a href="https://7cav.us/">7cav.us</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.jQuery || document.write('<script type="text/javascript" src="Javascript/jquery-3.4.0.min.js"><\/script>')
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment-timezone-with-data.min.js"></script>
+    <script src="../Javascript/ajax-squad.js"></script>
+    <script src="../Javascript/squad.js"></script>
+</body>
+
+</html>
